@@ -27,6 +27,6 @@ Algorithm:
 Brute force find the largest size
 Cut it into half
 
-Notice:
+Note:
 (left + right) // 2
 '''

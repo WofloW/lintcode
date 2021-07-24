@@ -27,7 +27,7 @@ Algorithm:
 Use stack to simulate the function stack
 Use list to caculate the function exclusive time
 
-Notice:
+Note:
 end time 3 is the end of time 3
 start time is the start of time 3
 '''

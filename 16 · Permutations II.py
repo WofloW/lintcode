@@ -37,7 +37,7 @@ Algorithm:
 DFS
 Duplicated check
 
-Notice:
+Note:
 For example
 2' 2''
 If 2' is not visited, don't visit 2''. That will cause duplicated permutation.

@@ -31,6 +31,6 @@ class Solution:
 Algorithm:
 DFS
 
-Notice:
+Note:
 Shallow copy of permutation
 '''

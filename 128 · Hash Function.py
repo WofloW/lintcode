@@ -19,7 +19,7 @@ Algorithm:
 33 hashing
 abc  33^2 * a + 33^1 * b + 33^0 * c
 
-Notice:
+Note:
 module HASH_SIZE everytime when adding new character
 
 '''
