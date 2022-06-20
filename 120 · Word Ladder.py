@@ -1,3 +1,17 @@
+# https://www.lintcode.com/problem/120/description
+
+# Hard
+
+
+"""
+Algorithm:
+Two way BFS
+
+Note:
+Use alphabet to optimize the transformation
+"""
+
+
 class Solution:
     """
     @param: start: a string
@@ -75,10 +89,52 @@ class Solution:
         return False
 
 
-'''
-Algorithm:
-Two way BFS
+# Easy BFS
+from typing import (
+    Set,
+)
 
-Note:
-Use alphabet to optimize the transformation
-'''
+from collections import deque
+
+ALPHABET = 'abcdefghijklmnopqrstuvwxyz'
+
+
+class Solution:
+    """
+    @param start: a string
+    @param end: a string
+    @param dict: a set of string
+    @return: An integer
+    """
+
+    def ladder_length(self, start: str, end: str, dict: Set[str]) -> int:
+        # write your code here
+        dict.add(end)
+
+        visited = set([start])
+        queue = deque([start])
+
+        step = 1
+        while queue:
+            step += 1
+            for _ in range(len(queue)):
+                word = queue.popleft()
+                neighbors = self.find_next(word, dict, visited)
+
+                for neighbor in neighbors:
+                    if neighbor == end:
+                        return step
+                    queue.append(neighbor)
+        return 0
+
+    def find_next(self, word, dict, visited):
+        next_words = []
+        for i, c in enumerate(word):
+            for a in ALPHABET:
+                if a == c:
+                    continue
+                new_word = word[:i] + a + word[i + 1:]
+                if new_word in dict and new_word not in visited:
+                    next_words.append(new_word)
+                    visited.add(new_word)
+        return next_words
