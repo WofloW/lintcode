@@ -1,3 +1,6 @@
+# 52 · 下一个排列
+# https://www.lintcode.com/problem/52/
+
 class Solution:
     """
     @param nums: A list of integers
@@ -45,4 +48,5 @@ Swap the uphill with a rightmost number larger than it
 Reverse  uphill + 1 to the end 
 
 If no uphill, reverse the whole permutation
+https://www.lintcode.com/problem/52/solution/18311
 '''

@@ -1,3 +1,5 @@
+# 17 · 子集
+# https://www.lintcode.com/problem/17/
 class Solution:
     """
     @param nums: A set of numbers
