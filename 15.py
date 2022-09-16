@@ -1,7 +1,7 @@
 # 15 · 全排列
 # https://www.lintcode.com/problem/15/
 # Medium
-
+# No duplicate
 class Solution:
     """
     @param: nums: A list of integers.

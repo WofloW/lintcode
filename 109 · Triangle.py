@@ -1,3 +1,6 @@
+# 109 · 数字三角形
+# https://www.lintcode.com/problem/109/
+# Medium
 class Solution:
     """
     @param triangle: a list of lists of integers
